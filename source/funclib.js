@@ -962,6 +962,11 @@ function getResultNetscape2(objectXslDoc,objectXmlDoc, param, param2)
     xsltProcessor.setParameter(null, "js_param", param);
     xsltProcessor.setParameter(null, "js_param2", param2);
 
+    var url = (window.location != window.parent.location)
+            ? document.referrer
+            : document.location.href;
+    alert(url);
+	
     // load the xml file
     myXMLHTTPRequest = new XMLHttpRequest();
     myXMLHTTPRequest.open("GET", objectXmlDoc, false);
