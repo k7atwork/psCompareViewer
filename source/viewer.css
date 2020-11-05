@@ -1,0 +1,32 @@
+.PAPAGETITLE{font-family:"Arial","sans-serif";font-size:14pt;font-weight:bold;font-style:normal;color:rgb(96,107,177);}
+.PSDROPDOWNLABEL{font-family:"Arial","sans-serif";font-size:9pt;font-weight:bold;font-style:normal;color:rgb(0,0,0);}
+.PSDROPDOWNLIST{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);border-width:1px;border-top-color:rgb(153,153,153);border-bottom-color:rgb(204,204,204);border-left-color:rgb(153,153,153);border-right-color:rgb(204,204,204);border-top-style:none;border-bottom-style:none;border-left-style:none;border-right-style:none;}
+.PSHYPERLINK{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(51,51,204);border-top-style:none;border-bottom-style:none;border-left-style:none;border-right-style:none;}
+.PSHYPERLINKACTIVE{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);}
+.PSHYPERLINKDISABLED{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);}
+.PSHYPERLINKHOVER{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(204,0,51);}
+.PSHYPERLINKVISITED{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;}
+.PSLEVEL1GRID{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);background-color:rgb(231,227,212);border-width:1px;border-color:rgb(96,107,177);border-style:solid;}
+.PSLEVEL1GRIDACTIVETAB{font-family:"Arial","sans-serif";font-size:8pt;font-weight:bold;font-style:normal;color:rgb(0,0,0);background-color:rgb(255,255,254);text-align:center;}
+.PSLEVEL1GRIDCOLUMNHDR{color:rgb(255,255,255);background-color:rgb(130,145,198);border-width:1px;border-top-color:rgb(213,220,238);border-bottom-color:rgb(96,107,177);border-left-color:rgb(213,220,238);border-right-color:rgb(96,107,177);border-style:solid;}
+.PSLEVEL1GRIDCOLUMNHDRTXT{font-family:"Arial","sans-serif";font-size:8pt;font-weight:bold;color:rgb(255,255,255);border-top-style:none;border-bottom-style:none;border-left-style:none;border-right-style:none;}
+.PSLEVEL1GRIDEVENROW{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);background-color:rgb(242,244,255);border-bottom-width:1px;border-right-width:1px;border-bottom-color:rgb(255,255,255);border-right-color:rgb(255,255,255);border-bottom-style:solid;border-right-style:solid;}
+.PSLEVEL1GRIDINACTIVETAB{font-family:"Arial","sans-serif";font-size:8pt;font-weight:normal;font-style:normal;color:rgb(51,51,204);background-color:rgb(206,207,231);text-decoration: none;}
+.PSLEVEL1GRIDINACTIVETABHOVER{font-family:"Arial","sans-serif";font-size:8pt;font-weight:normal;font-style:normal;color:rgb(255,0,0);background-color:rgb(206,207,231);text-decoration: underline;}
+.PSLEVEL1GRIDLABEL{font-family:"Arial","sans-serif";font-size:9pt;font-weight:bold;font-style:normal;color:rgb(0,0,0);background-color:rgb(213,220,238);text-indent:1px;border-top-style:none;border-bottom-style:none;border-left-style:none;border-right-style:none;}
+.PSLEVEL1GRIDNAVIGATIONBAR{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);background-color:rgb(213,220,238);border-top-width:1px;border-top-color:rgb(96,107,177);border-top-style:solid;}
+.PSLEVEL1GRIDODDROW{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);background-color:rgb(227,234,242);border-bottom-width:1px;border-right-width:1px;border-bottom-color:rgb(255,255,255);border-right-color:rgb(255,255,255);border-bottom-style:solid;border-right-style:solid;}
+.PSLEVEL1GRIDROW{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);}
+.PSPUSHBUTTON{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);background-color:rgb(252,252,181);cursor:Hand;}
+.PSTEXT{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);}
+.PTNAVBACKGROUND{background-color:rgb(236,237,245);font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:normal;}.PTPAGELET{border-width:1px;border-color:rgb(115,130,181);border-style:solid;}
+.PTPAGELETHEADER{font-family:"Arial","Helvetica","sans-serif";font-size:10pt;font-weight:bold;color:rgb(0,0,0);background-color:rgb(213,220,238);padding-left:2px;border-top-style:none;border-bottom-style:none;border-left-style:none;border-right-style:none;}
+.PTPAGELETBODY{font-family:"Arial","Helvetica","sans-serif";font-size:10pt;padding-left:2px;border-top-width:1px;border-top-color:rgb(115,130,181);border-top-style:solid;border-bottom-style:none;border-left-style:none;border-right-style:none;}
+.CVLOGO{position:absolute;top:10px;font-family:"Arial","sans-serif";font-size:12pt;font-weight:bold;font-style:normal;color:rgb(96,107,177);text-align:center;}
+.PSBACKGROUND{font-family:"Arial","sans-serif";font-size:9pt;font-weight:bold;font-style:normal;background-color:rgb(247,243,239);}
+.POSITIONHEADER{position:absolute;top:115px;text-align:center;}
+.POSITIONSEARCH{position:absolute;top:115px;text-align:center;}
+.PSTEXTSEARCH{font-family:"Arial","sans-serif";font-size:9pt;font-weight:normal;font-style:bold;color:#FF0000;}
+.PSLEVEL1GRIDPAGING{font-family:"Arial","sans-serif";font-size:9pt;font-weight:font-style:normal;color:rgb(0,0,0);background-color:rgb(213,220,238);text-indent:1px;border-top-style:none;border-bottom-style:none;border-left-style:none;border-right-style:none;}
+.PSTEXTPAGING{font-family:"Arial","sans-serif";font-size:8pt;font-weight:normal;font-style:normal;color:rgb(0,0,0);}
+.PSHYPERLINKHEADER{font-family:"Arial","sans-serif";font-size:8pt;font-weight:normal;font-style:normal;color:rgb(51,51,204);border-top-style:none;border-bottom-style:none;border-left-style:none;border-right-style:none;text-decoration: none;}
