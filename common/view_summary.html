@@ -1,0 +1,68 @@
+<!--
+/***********************************************************************
+*                                                                      *
+*   viewarea.html --  This page is usedas the main template for viewing
+*	definition wise complete list of items. Also if						*
+*	there are more then one page is associated,							*
+*	the paging becomes enabled.											*
+*																		*
+************************************************************************
+*                                                                      *
+*                                                                      *
+************************************************************************
+*                                                                      *
+*                    /pt_install/SETU
+*                     /main/pt84x/4
+* $Author:: crajase$crajasek
+* $Date:: 5-Nov-2$1-Nov-2004.12:13:56
+*                                                                      *
+***********************************************************************/
+-->
+<html>
+<head>
+<!--
+* *************************************************************** 
+*  This software and related documentation are provided under a   
+*  license agreement containing restrictions on use and           
+*  disclosure and are protected by intellectual property          
+*  laws. Except as expressly permitted in your license agreement  
+*  or allowed by law, you may not use, copy, reproduce,           
+*  translate, broadcast, modify, license, transmit, distribute,   
+*  exhibit, perform, publish or display any part, in any form or  
+*  by any means. Reverse engineering, disassembly, or             
+*  decompilation of this software, unless required by law for     
+*  interoperability, is prohibited.                               
+*  The information contained herein is subject to change without  
+*  notice and is not warranted to be error-free. If you find any  
+*  errors, please report them to us in writing.                   
+*                                                                 
+*  Copyright (C) 1988, 2009, Oracle and/or its affiliates.        
+*  All Rights Reserved.                                           
+* *************************************************************** 
+-->
+<!--
+*                                                                    
+-->
+<link href="../source/viewer.css" rel="stylesheet" type="text/css"/>
+<script src="../source/funclib.js" type="text/javascript"> </script>
+<script src="../source/Sarissa.js" type="text/javascript"></script>
+
+</head>
+<BODY class="PSBACKGROUND">
+<div id="divSummaryItemsList"> </div>
+<script language="JavaScript">
+var args = getArgs();
+var objType = null;
+var Template = null;
+var fileCount = null;
+
+if (args.objtype) objType = args.objtype;
+if (args.Template) Template = args.Template;
+fileCount = args.filecount;
+
+// Call the method in JS with the specified parameters
+SummaryObjectTypeSelect(objType,Template,fileCount);
+</script>
+</body>
+</html>
+

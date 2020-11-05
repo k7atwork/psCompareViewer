@@ -1,0 +1,64 @@
+<!--
+ ************************************************************************
+ * ProjectCompareViewer.html                                            *
+ *                                                                      *
+ * This page is used as the main template for single                    *
+ *    Compare Viewer project                                            *
+ *                                                                      *
+ ************************************************************************
+ *                                                                      *
+ *                                                                      *
+ ************************************************************************
+ *                                                                      *
+ *                    /pt_install/SETUP/UPGCOMPVIEWER/project_files/ProjectCompareViewer.html
+ *                     /main/pt84x/4
+ * $Author:: crajase$crajasek
+ * $Date:: 5-Nov-2$1-Nov-2004.12:10:36
+ *                                                                      *
+ ***********************************************************************/
+
+ * This page comprises the main template for the
+ * report viewer per project.Contains three frames
+ * each associated with a specific html
+ *
+-->
+<html>
+<head>
+<!--
+* *************************************************************** 
+*  This software and related documentation are provided under a   
+*  license agreement containing restrictions on use and           
+*  disclosure and are protected by intellectual property          
+*  laws. Except as expressly permitted in your license agreement  
+*  or allowed by law, you may not use, copy, reproduce,           
+*  translate, broadcast, modify, license, transmit, distribute,   
+*  exhibit, perform, publish or display any part, in any form or  
+*  by any means. Reverse engineering, disassembly, or             
+*  decompilation of this software, unless required by law for     
+*  interoperability, is prohibited.                               
+*  The information contained herein is subject to change without  
+*  notice and is not warranted to be error-free. If you find any  
+*  errors, please report them to us in writing.                   
+*                                                                 
+*  Copyright (C) 1988, 2009, Oracle and/or its affiliates.        
+*  All Rights Reserved.                                           
+* *************************************************************** 
+-->
+<!--
+*                                                                    
+-->
+<link href="../source/viewer.css" rel="stylesheet" type="text/css"/>
+<script language="JavaScript">
+	/* Global Variable for keeping track of tab */
+	var selectedTab = "compare";
+	var hasComposite = -2; /* -1 for false, + for true */
+</script>
+</head>
+  <frameset cols="175,*" frameborder="0" framespacing="0">
+    <frameset rows="100,*" frameborder="0" framespacing="0">
+      <frame name="logo" src="../source/logo.html" scrolling="no"></frame>
+      <frame name="objtypes" src="objtypelist.html"></frame>
+    </frameset>
+      <frame name="viewarea" src="header.html"></frame>
+  </frameset>
+</html>

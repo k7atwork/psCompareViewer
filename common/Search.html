@@ -1,0 +1,107 @@
+<!--
+/***********************************************************************
+*                                                                      *
+*       Search.html  -- Compare Viewer Search html file                *
+*                                                                      *
+************************************************************************
+*                                                                      *
+*                                                                      *
+************************************************************************
+*                                                                      *
+*                    /pt_install/SETUP/UPGCOMPVIEWER/project_files/Search.html
+*                     /main/pt84x/4
+* $Author:: crajase$crajasek
+* $Date:: 5-Nov-2$1-Nov-2004.12:10:45
+*                                                                      *
+***********************************************************************/
+-->
+<html>
+<head>
+<!--
+* *************************************************************** 
+*  This software and related documentation are provided under a   
+*  license agreement containing restrictions on use and           
+*  disclosure and are protected by intellectual property          
+*  laws. Except as expressly permitted in your license agreement  
+*  or allowed by law, you may not use, copy, reproduce,           
+*  translate, broadcast, modify, license, transmit, distribute,   
+*  exhibit, perform, publish or display any part, in any form or  
+*  by any means. Reverse engineering, disassembly, or             
+*  decompilation of this software, unless required by law for     
+*  interoperability, is prohibited.                               
+*  The information contained herein is subject to change without  
+*  notice and is not warranted to be error-free. If you find any  
+*  errors, please report them to us in writing.                   
+*                                                                 
+*  Copyright (C) 1988, 2009, Oracle and/or its affiliates.        
+*  All Rights Reserved.                                           
+* *************************************************************** 
+-->
+<!--
+*                                                                    
+-->
+<link href="../source/viewer.css" rel="stylesheet" type="text/css"/>
+<script src="../source/funclib.js" type="text/javascript"> </script>
+<script src="../source/Sarissa.js" type="text/javascript"></script>
+<!--
+* This script gets all the project types from project.xml
+* to be listed in the select box
+* It use Sarissa JS wrapper for XPATH compatibility with Netscape and IE
+-->
+<script>
+var oNodeList;
+var filter="/project/object_type";
+var xmlDocObject = Sarissa.getDomDocument();
+xmlDocObject.async = false;
+xmlDocObject.load("project.xml");
+xmlDocObject.setProperty("SelectionLanguage", "XPath");
+oNodeList = xmlDocObject.selectNodes(filter);
+</script>
+</head>
+<body class="PSBACKGROUND">
+<form name="search" method="post" action="" onSubmit="return searchResult()">
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <table align="left" cellspacing="2" cellpadding="0" border="0">
+        <tr>&nbsp;&nbsp;&nbsp;&nbsp
+            <td colspan ="2" align="center" id="objTd" class="PSTEXTSEARCH"></td>
+        </tr>
+    <table>
+    <p>&nbsp;</p>
+    <table align="left" cellspacing="2" cellpadding="0" border="0">
+        <tr>
+            <td class="PSTEXT"><b>Definition Type:</b></td>
+            <td align="left">
+            <select name="search_list" class="PSTEXT" align="left">
+                <option value='N/A'>Please Select Definition Type</option>
+                <script>
+                var length= oNodeList.length;
+                var oNodeArray = new Array(length);
+                var i;
+                for (i=0;i < length;i++){
+                    oNodeArray[i] = oNodeList.item(i).getAttribute("name");
+                    oNodeArray.sort();
+                }
+                for (i=0;i < length;i++){
+                    document.write('<option value='+oNodeArray[i]+'>'+oNodeArray[i]+'<\/option>');
+                }
+
+                </script>
+            </select>
+            </td>
+        </tr>
+        <tr>
+            <td class="PSTEXT"><b>Search Text:</b></td>
+            <td align="left">
+                <input type="text" name="search_text" size="35" class="PSTEXT">
+            </td>
+        </tr>
+        <tr>
+            <td colspan ="2" align="left">
+                <input type="button" name="searchbutton" value="Search" onClick="searchResult()" class="PSPUSHBUTTON">
+            </td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
