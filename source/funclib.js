@@ -55,7 +55,7 @@ function getCompareFlag()
         if (!parent.selectedTab)
               parent.selectedTab = "compare";
     }
-    
+    alert(parent.document.location.href);
     if(rptType)
         parent.selectedTab = rptType;
     
