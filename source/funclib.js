@@ -962,8 +962,6 @@ function getResultNetscape2(objectXslDoc,objectXmlDoc, param, param2)
     xsltProcessor.setParameter(null, "js_param", param);
     xsltProcessor.setParameter(null, "js_param2", param2);
 
-	alert(selectedTab);
-	
     // load the xml file
     myXMLHTTPRequest = new XMLHttpRequest();
     myXMLHTTPRequest.open("GET", objectXmlDoc, false);
