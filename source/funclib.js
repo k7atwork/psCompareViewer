@@ -55,7 +55,7 @@ function getCompareFlag()
         if (!parent.selectedTab)
               parent.selectedTab = "compare";
     }
-    alert(parent.document.location.href);
+    // alert(parent.document.location.href);
     if(rptType)
         parent.selectedTab = rptType;
     
@@ -940,6 +940,7 @@ function getResultIE2(objectXslDoc,objectXmlDoc,js_param, js_param2)
 
 function getResultNetscape(objectXslDoc,objectXmlDoc,param)
 {
+	alert(parent.document.location.href);
     return getResultNetscape2(objectXslDoc,objectXmlDoc,param, '');
 }
 
